@@ -126,13 +126,13 @@ imap <C-Return> <CR><CR><C-o>k<Tab>
 inoremap jj <ESC>
 
 " Colorscheme
-colo monochrome
+colo monokain
 
 " Enable autoindent
 set autoindent
 
 " Theme for Airline
-let g:airline_theme='monochrome'
+let g:airline_theme='base16_monokai'
 
 " ctrlp activation
 set runtimepath^=~/.vim/bundle/ctrlp.vim
