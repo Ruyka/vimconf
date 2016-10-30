@@ -50,8 +50,8 @@ set hlsearch
 set colorcolumn=80
 
 " Indentation guides
-set listchars=tab:\|\ 
-set list
+" set listchars=tab:\|\ 
+" set list
 
 " Set dark background
 set background=dark
@@ -111,13 +111,13 @@ nnoremap gH <C-w>H
 set formatoptions+=r
 
 " Java Compile and Run
-nnoremap yj  :!clear; javac %; java %:r; rm %:r.class<CR>
+nnoremap yj  :!clear; javac %; java %:r;<CR>
 
 " C Compile and Run
-nnoremap yc  :!clear; gcc %; ./a.out; rm a.out<CR>
+nnoremap yc  :!clear; gcc %; ./a.out;<CR>
 
-" PHP Run
-nnoremap yp  :!clear;php %<CR>
+" Python Run
+nnoremap yp  :!clear;python %<CR>
 
 " Auto indent after newline
 imap <C-Return> <CR><CR><C-o>k<Tab>
@@ -126,7 +126,7 @@ imap <C-Return> <CR><CR><C-o>k<Tab>
 inoremap jj <ESC>
 
 " Colorscheme
-colo monokain
+colo Monokai
 
 " Enable autoindent
 set autoindent
@@ -137,3 +137,5 @@ let g:airline_theme='base16_monokai'
 " ctrlp activation
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
+" Insert timestamp
+inoremap <F5> <C-R>=strftime("%c")<CR>
