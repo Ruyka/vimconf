@@ -54,7 +54,7 @@ set colorcolumn=80
 " set list
 
 " Set dark background
-set background=dark
+set background=light
 
 " Resolve the issue about backspace
 set backspace=indent,eol,start
@@ -70,6 +70,9 @@ set fileformats=unix,dos,mac
 
 " Toggle nerdtree
 map <C-n> :NERDTreeToggle<CR>
+
+" NERDTree's width
+let g:NERDTreeWinSize=42
 
 " Show hidden files
 let NERDTreeShowHidden=1
@@ -111,10 +114,10 @@ nnoremap gH <C-w>H
 set formatoptions+=r
 
 " Java Compile and Run
-nnoremap yj  :!clear; javac %; java %:r;<CR>
+nnoremap yj  :!clear; javac %; java %:r; rm *.class<CR>
 
 " C Compile and Run
-nnoremap yc  :!clear; gcc %; ./a.out;<CR>
+nnoremap yc  :!clear; g++-4.9 %; ./a.out; rm a.out<CR>
 
 " Python Run
 nnoremap yp  :!clear;python %<CR>
@@ -126,16 +129,29 @@ imap <C-Return> <CR><CR><C-o>k<Tab>
 inoremap jj <ESC>
 
 " Colorscheme
-colo Monokai
+colo  wombat256
 
 " Enable autoindent
 set autoindent
 
 " Theme for Airline
-let g:airline_theme='base16_monokai'
+let g:airline_theme='wombat'
 
 " ctrlp activation
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Insert timestamp
 inoremap <F5> <C-R>=strftime("%c")<CR>
+
+" Indent Line
+let g:indentLine_char = '|'
+
+" Ctags configuration
+let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+" let g:tagbar_width=30
+noremap <C-j> :TagbarToggle<CR>
+
+" Toggle paste and no paste
+noremap<C-o>p : set paste<CR>
+noremap<C-o>n : set nopaste<CR>
+
