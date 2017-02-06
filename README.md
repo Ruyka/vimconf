@@ -1,5 +1,5 @@
 # Vim Awesome Configuration
-This is my current Vim setting that I have spents many days to come up with the bundles and the .vimrc file.
+This is my current Vim setting that I have spent days to come up with the bundles and the .vimrc file.
 
 ## Installation
 
