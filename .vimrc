@@ -50,8 +50,8 @@ set hlsearch
 set colorcolumn=80
 
 " Indentation guides
-" set listchars=tab:\|\ 
-" set list
+set listchars=tab:\|\ 
+set list
 
 " Set dark background
 set background=light
@@ -117,7 +117,7 @@ set formatoptions+=r
 nnoremap yj  :!clear; javac %; java %:r; rm *.class<CR>
 
 " C Compile and Run
-nnoremap yc  :!clear; g++-4.9 %; ./a.out; rm a.out<CR>
+nnoremap yc  :!clear; gcc-6 %; ./a.out; rm a.out<CR>
 
 " Python Run
 nnoremap yp  :!clear;python %<CR>
@@ -129,13 +129,13 @@ imap <C-Return> <CR><CR><C-o>k<Tab>
 inoremap jj <ESC>
 
 " Colorscheme
-colo  wombat256
+colo Benokai
 
 " Enable autoindent
 set autoindent
 
 " Theme for Airline
-let g:airline_theme='wombat'
+let g:airline_theme='base16_monokai'
 
 " ctrlp activation
 set runtimepath^=~/.vim/bundle/ctrlp.vim
