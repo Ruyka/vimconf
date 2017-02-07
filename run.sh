@@ -57,4 +57,7 @@ git clone https://github.com/flazz/vim-colorschemes.git ~/.vim/bundle/vim-colors
 echo ">> Applying configuration"
 cp vimconf/.vimrc ~/
 
+echo ">> Cleaning up"
+rm -rf vimconf
+
 echo ">> Done"
