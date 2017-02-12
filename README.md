@@ -15,3 +15,6 @@ or
 
 	sudo yum install ctags # for Fedora, CentOS...
 
+## Tutorial
+I will write a complete tutorial about this project, but not now. If you want to
+learn more about keybindings, packages. just have a look at .vimrc. Thank you.
