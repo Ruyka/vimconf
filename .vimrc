@@ -117,7 +117,7 @@ set formatoptions+=r
 nnoremap yj  :!clear; javac %; java %:r; rm *.class<CR>
 
 " C Compile and Run
-nnoremap yc  :!clear; gcc-6 %; ./a.out; rm a.out<CR>
+nnoremap yc  :!clear; gcc %; ./a.out; rm a.out<CR>
 
 " Python Run
 nnoremap yp  :!clear;python %<CR>
@@ -129,13 +129,13 @@ imap <C-Return> <CR><CR><C-o>k<Tab>
 inoremap jj <ESC>
 
 " Colorscheme
-colo Benokai
+colo badwolf
 
 " Enable autoindent
 set autoindent
 
 " Theme for Airline
-let g:airline_theme='base16_monokai'
+let g:airline_theme='badwolf'
 
 " ctrlp activation
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -147,7 +147,7 @@ inoremap <F5> <C-R>=strftime("%c")<CR>
 let g:indentLine_char = '|'
 
 " Ctags configuration
-let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+let g:tagbar_ctags_bin='/usr/bin/ctags'
 " let g:tagbar_width=30
 noremap <C-j> :TagbarToggle<CR>
 

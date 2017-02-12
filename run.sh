@@ -51,6 +51,9 @@ git clone git://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround
 echo ">> Installing Tabmerge"
 git clone https://github.com/vim-scripts/Tabmerge.git ~/.vim/bundle/Tabmerge
 
+echo ">> Installing DoxygenToolkit"
+git clone https://github.com/vim-scripts/DoxygenToolkit.vim.git ~/.vim/bundle/DoxygenToolkit
+
 echo ">> Installing colorschemes"
 git clone https://github.com/flazz/vim-colorschemes.git ~/.vim/bundle/vim-colorschemes
 
