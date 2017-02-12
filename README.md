@@ -8,7 +8,10 @@ This is my current Vim setting that I have spent days to come up with the bundle
 
 ## Note
 One of the package here requires ctags. You just need to download it manually.
+
 	sudo apt-get install ctags # for Ubuntu, Debian...
+
 or
+
 	sudo yum install ctags # for Fedora, CentOS...
 
