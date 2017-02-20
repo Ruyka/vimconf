@@ -50,8 +50,8 @@ set hlsearch
 set colorcolumn=80
 
 " Indentation guides
-set listchars=tab:\|\ 
-set list
+" set listchars=tab:\|\ 
+" set list
 
 " Set dark background
 set background=light
@@ -129,13 +129,13 @@ imap <C-Return> <CR><CR><C-o>k<Tab>
 inoremap jj <ESC>
 
 " Colorscheme
-colo badwolf
+colo solarized
 
 " Enable autoindent
 set autoindent
 
 " Theme for Airline
-let g:airline_theme='badwolf'
+let g:airline_theme='solarized'
 
 " ctrlp activation
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -144,7 +144,8 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 inoremap <F5> <C-R>=strftime("%c")<CR>
 
 " Indent Line
-let g:indentLine_char = '|'
+set listchars=tab:\|\ 
+set list
 
 " Ctags configuration
 let g:tagbar_ctags_bin='/usr/bin/ctags'
