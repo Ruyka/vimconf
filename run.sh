@@ -4,6 +4,12 @@ echo ">> Removing current setting"
 rm -rf ~/.vim
 rm -f ~/.vimrc
 
+echo ">> Install curl"
+sudo apt-get install curl
+
+echo ">> install ctags"
+sudo apt-get install ctags
+
 echo ">> Installing Pathogen"
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
